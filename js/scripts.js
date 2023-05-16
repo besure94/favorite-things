@@ -1,9 +1,13 @@
-// window.addEventListener("load", function() {
-// 	let form = document.querySelector("form");
-// });
+window.addEventListener("load", function() {
+	let form = document.querySelector("form");
 
-form.addEventListener("submit", function(event) {
-	let boxOne = document.getElementById("boxOne").value.toLowerCase();
-	let boxTwo = document.getElementById("boxTwo").value.toLowerCase();
-	let boxThree = document.getElementById("boxThree").value.toLowerCase();
+	form.addEventListener("submit", function(event) {
+		const boxOne = document.getElementById("boxOne").value;
+		const boxTwo = document.getElementById("boxTwo").value;
+		const boxThree = document.getElementById("boxThree").value;
+		const answers = [boxOne, boxTwo, boxThree];
+		console.log(answers);
+
+		event.preventDefault();
+	});
 });
